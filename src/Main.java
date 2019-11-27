@@ -24,7 +24,9 @@ public class Main {
         cars[0] = car;
         cars[1] = car2;
         Dealer dealer = new Dealer(cars, "lodz", "RajKonkret");
+        Dealer dealer2 = new Dealer(cars, "lodz", "concept");
         dealers[0] = dealer;
+        dealers[1] = dealer2;
 
         cars = dealer.getCar();
         car = cars[0];
