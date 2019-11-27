@@ -8,4 +8,5 @@ public class Dealer {
         this.address = address;
         this.name = name;
     }
+
 }
