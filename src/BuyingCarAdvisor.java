@@ -12,7 +12,7 @@ class BuyingCarAdvisor {
 
                     if (car != null) {
                         System.out.println(car.getBrand().toUpperCase());
-                        System.out.println(car.getPrice());
+                        System.out.println("$" + car.getPrice());
                     }
                 }
             }
