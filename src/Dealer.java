@@ -1,5 +1,5 @@
 public class Dealer {
-    private Car car[] = new Car[100];
+    Car car[];
     private String address;
     private String name;
 

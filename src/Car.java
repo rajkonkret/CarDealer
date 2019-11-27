@@ -1,5 +1,5 @@
 public class Car {
-    private String brand;
+    public String brand;
     private String model;
     private int price;
 

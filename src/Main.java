@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 //    Stworzyć doradcę kupna samochodu,
 //    którego celem będzie znalezienie najtańszej oferty spośród kilku dealerów samochodowych.
@@ -15,6 +17,12 @@ public class Main {
 //    Sugeruję by najtańszym autem okazał się.... Fiat Panda.
 
     public static void main(String[] args) {
+        Car cars[] = new Car[10];
+        Car car = new Car("bmw", "750", 10000);
+        cars[0]=car;
+        Dealer dealer = new Dealer(cars,"lodz","RajKonkret");
+        car = dealer.car[0];
 
+        System.out.println(car.brand);
     }
 }
