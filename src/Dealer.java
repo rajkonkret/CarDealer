@@ -13,11 +13,11 @@ class Dealer {
         return car;
     }
 
-    public String getAddress() {
+    String getAddress() {
         return address;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 }
