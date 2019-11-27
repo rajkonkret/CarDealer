@@ -1,7 +1,7 @@
 public class Dealer {
-    Car car[] = new Car[100];
-    String address;
-    String name;
+    private Car car[] = new Car[100];
+    private String address;
+    private String name;
 
     public Dealer(Car[] car, String address, String name) {
         this.car = car;
