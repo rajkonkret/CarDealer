@@ -11,4 +11,8 @@ public class Main {
 //    c.tworzyła obiekt BuyingCarAdvisor
 //    d.wywoływała metodę findBestOffer()e.wypisywała najlepszą ofertę
 //    Sugeruję by najtańszym autem okazał się.... Fiat Panda.
+
+    public static void main(String[] args) {
+
+    }
 }
