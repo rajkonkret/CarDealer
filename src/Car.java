@@ -12,9 +12,11 @@ class Car {
     int getPrice() {
         return price;
     }
+
     String getBrand() {
         return brand;
     }
+
     String getModel() {
         return model;
     }

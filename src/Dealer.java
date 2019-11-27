@@ -1,5 +1,5 @@
 class Dealer {
-    Car[] car;
+    private Car[] car;
     private String address;
     private String name;
 
@@ -9,5 +9,15 @@ class Dealer {
         this.name = name;
     }
 
+    Car[] getCar() {
+        return car;
+    }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
