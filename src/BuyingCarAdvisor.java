@@ -4,6 +4,7 @@ class BuyingCarAdvisor {
     private Dealer cheapestDealer;
 
     BuyingCarAdvisor(Dealer[] dealer) {
+
         this.dealer = dealer;
     }
 

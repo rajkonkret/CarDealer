@@ -14,10 +14,12 @@ class Car {
     }
 
     String getBrand() {
+
         return brand;
     }
 
     String getModel() {
+
         return model;
     }
 }
