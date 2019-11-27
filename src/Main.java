@@ -18,11 +18,13 @@ public class Main {
     public static void main(String[] args) {
         Car[] cars = new Car[10];
         Car[] cars1 = new Car[10];
+        Car[] cars2 = new Car[10];
         Dealer[] dealers = new Dealer[10];
 
         Car car = new Car("bmw", "750", 10000);
         Car car2 = new Car("bmw", "850", 15000);
         Car car1 = new Car("bmw", "116", 7500);
+        Car car3 = new Car("Dacia", "Sandero", 3500);
         cars[0] = car;
         cars[1] = car2;
 
@@ -30,11 +32,17 @@ public class Main {
         cars1[1] = car2;
         cars1[2] = car1;
 
+        cars2[0] = car;
+        cars2[1] = car2;
+        cars2[2] = car1;
+        cars2[3] = car3;
 
         Dealer dealer = new Dealer(cars, "lodz", "RajKonkret");
         Dealer dealer2 = new Dealer(cars1, "lodz", "concept");
+        Dealer dealer3 = new Dealer(cars2, "WWA", "TYSIAK");
         dealers[0] = dealer;
         dealers[1] = dealer2;
+        dealers[2] = dealer3;
 
         cars = dealer.getCar();
         car = cars[0];
