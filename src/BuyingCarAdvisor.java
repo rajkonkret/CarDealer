@@ -1,7 +1,7 @@
 class BuyingCarAdvisor {
     private Dealer[] dealer = new Dealer[10];
 
-    public BuyingCarAdvisor(Dealer[] dealer) {
+    BuyingCarAdvisor(Dealer[] dealer) {
         this.dealer = dealer;
     }
 
@@ -12,6 +12,7 @@ class BuyingCarAdvisor {
 
                     if (car != null) {
                         System.out.println(car.brand.toUpperCase());
+                        System.out.println(car.getPrice());
                     }
                 }
             }
