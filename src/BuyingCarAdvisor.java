@@ -1,6 +1,7 @@
 class BuyingCarAdvisor {
     private Dealer[] dealer;
     private Car cheapestCar;
+    private Dealer cheapestDealer;
 
     BuyingCarAdvisor(Dealer[] dealer) {
         this.dealer = dealer;
@@ -13,19 +14,20 @@ class BuyingCarAdvisor {
                 for (Car car : dealer1.getCar()) {
 
                     if (car != null) {
-                        System.out.println(dealer1.getName());
-                        System.out.println(car.getBrand().toUpperCase());
-                        System.out.println(car.getModel());
-                        System.out.println("$" + car.getPrice());
+                        System.out.print(dealer1.getName());
+                        System.out.print(" " + car.getBrand().toUpperCase());
+                        System.out.print(" " + car.getModel());
+                        System.out.println(" $" + car.getPrice());
                         if (car.getPrice() < cheapest) {
                             cheapest = car.getPrice();
                             cheapestCar = car;
+                            cheapestDealer = dealer1;
                         }
                     }
                 }
             }
         }
-        System.out.println("Najtańszy = " +cheapestCar.getBrand()+" "+cheapestCar.getModel()+" $"+cheapest);
+        System.out.println("Najtańszy = " + cheapestCar.getBrand() + " " + cheapestCar.getModel() + " $" + cheapest + " " + cheapestDealer.getName());
     }
 
 }
