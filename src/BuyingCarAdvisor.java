@@ -11,7 +11,7 @@ class BuyingCarAdvisor {
                 for (Car car : dealer1.car) {
 
                     if (car != null) {
-                        System.out.println(car.brand.toUpperCase());
+                        System.out.println(car.getBrand().toUpperCase());
                         System.out.println(car.getPrice());
                     }
                 }

@@ -1,5 +1,5 @@
 class Car {
-    public String brand;
+    private String brand;
     private String model;
     private int price;
 
@@ -11,5 +11,11 @@ class Car {
 
     int getPrice() {
         return price;
+    }
+    String getBrand() {
+        return brand;
+    }
+    String getModel() {
+        return model;
     }
 }

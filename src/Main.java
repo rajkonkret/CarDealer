@@ -24,7 +24,7 @@ public class Main {
         Dealer dealer = new Dealer(cars, "lodz", "RajKonkret");
         car = dealer.car[0];
 
-        System.out.println(car.brand);
+        System.out.println(car.getBrand());
         dealers[0]=dealer;
         BuyingCarAdvisor buyingCarAdvisor = new BuyingCarAdvisor(dealers);
         buyingCarAdvisor.findBestOffer();
