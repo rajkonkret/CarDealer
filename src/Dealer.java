@@ -20,4 +20,7 @@ class Dealer {
     String getName() {
         return name;
     }
+    void toPrint(){
+        System.out.println(name);
+    }
 }

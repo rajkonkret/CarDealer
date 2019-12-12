@@ -16,10 +16,10 @@ public class Main {
 //    Sugeruję by najtańszym autem okazał się.... Fiat Panda.
 
     public static void main(String[] args) {
-        Car[] cars = new Car[10];
-        Car[] cars1 = new Car[10];
-        Car[] cars2 = new Car[10];
-        Dealer[] dealers = new Dealer[10];
+        Car[] cars = new Car[4];
+        Car[] cars1 = new Car[4];
+        Car[] cars2 = new Car[4];
+        Dealer[] dealers = new Dealer[3];
 
         Car car = new Car("bmw", "750", 10000);
         Car car2 = new Car("bmw", "850", 15000);
@@ -38,7 +38,7 @@ public class Main {
         cars2[3] = car3;
 
         Dealer dealer = new Dealer(cars, "lodz", "RajKonkret");
-        Dealer dealer2 = new Dealer(cars1, "lodz", "concept");
+        Dealer dealer2 = new Dealer(cars1, "lodz", "Concept");
         Dealer dealer3 = new Dealer(cars2, "WWA", "TYSIAK");
         dealers[0] = dealer;
         dealers[1] = dealer2;
@@ -51,5 +51,6 @@ public class Main {
         System.out.println(car.getModel());
         BuyingCarAdvisor buyingCarAdvisor = new BuyingCarAdvisor(dealers);
         buyingCarAdvisor.findBestOffer();
+        buyingCarAdvisor.findBestOfferTwo();
     }
 }

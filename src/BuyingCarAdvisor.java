@@ -1,3 +1,10 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 class BuyingCarAdvisor {
     private Dealer[] dealer;
     private Car cheapestCar;
@@ -29,6 +36,15 @@ class BuyingCarAdvisor {
             }
         }
         System.out.println("Najtańszy = " + cheapestCar.getBrand() + " " + cheapestCar.getModel() + " $" + cheapest + " " + cheapestDealer.getName());
+    }
+    void findBestOfferTwo(){
+        List<Dealer> list = new ArrayList<>();
+        for (Dealer dealer1 : dealer) {
+            list.add(dealer1);
+        }
+        list.sort(Comparator.comparing(Dealer::getName));
+        List<Dealer> sortedDealer;
+        list.forEach(Dealer::toPrint);
     }
 
 }
